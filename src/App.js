@@ -11,7 +11,6 @@ class App extends Component {
         <div className="App-header">
          <h2> Cryptocurrency Ticker </h2>
         </div>
-
         <Tickers />
       </div>
     );
