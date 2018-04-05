@@ -1,9 +1,7 @@
 import React, { Component } from 'react';
 import './Tickers.css';
 import axios from 'axios';
-
 import Cryptocurrency from './Cryptocurrency';
-
 
 class Tickers extends Component {
     constructor(props) {
@@ -66,13 +64,11 @@ class Tickers extends Component {
             })
             .catch(err => console.log(err));
         }
-
     render() {
         var tickers = this.state.data.map((currency) =>
         <Cryptocurrency data={currency} key={currency.id} />
     );
 	
-
     return (
         <div className="tickers-container">
             <ul className="tickers">{tickers}</ul>
